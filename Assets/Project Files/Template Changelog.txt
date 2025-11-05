@@ -1,0 +1,66 @@
+v1.5.4
+Template: Table Zone class inspector hot fix
+
+v1.5.3
+Template: Zone class inspector hot fix
+
+v1.5.2
+Template: Cinemachine replaced with a simple custom module
+Template: Support of both Unity 2022.3 and Unity 6
+
+v1.5.1
+Template: UI IAP Store folders renamed to UI Store
+Core: Updated to v2.7.3
+
+v1.5.0
+Template: Added Unity 6 support
+Template: Added example main menu scene
+Defines: Fixed an issue with defines recalculation during the first import
+Defines: Reworked the define disable check. Instead of checking the file path, the system now verifies if the script type exists
+Core: Fixed Promotion window image size on 4k displays
+Core: Added the StaticUnloader script. It allows unloading static variables to support fast game launches (Editor only)
+Tween: Reworked the Tween script structure
+Tween: Added static unload functionality for Tween
+Tween: Reworked NextFrame tween logic
+Save: Removed unused variable
+Core: The script names have been changed to use singular instead of plural (e.g., CurrenciesController is now CurrencyController)
+Currency: Reworked CurrencyController.GetCurrency method (editor only)
+Monetization: A full-screen loading message has been added before displaying interstitial and rewarded video ads
+
+v1.4.4
+Added IAP Store
+Core updated
+Quality of life improvemnts
+
+v1.4.3
+Updated Watermelon Core
+Added Editors for Zone, TableZone, and Table behaviors
+Simplified level structure
+Added second world (demonstration of level changing system) 
+
+v1.4.2
+Updated Watermelon Core
+Added a new outline shader (now it works with WebGL and iOS)
+Improved mobile vibration
+All VFX reworked
+
+v1.4
+Added support of Keyboard input
+Added WebGL platform support
+Updated Watermelon Core
+
+v1.3.1
+Support of multiple levels
+
+v1.3
+Core update
+Added skins Store
+
+v1.2
+Bugfixes
+
+v1.1
+Core update
+
+v1.0
+Base

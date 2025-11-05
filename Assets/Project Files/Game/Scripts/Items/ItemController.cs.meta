@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 6295d984a96634a4196c1c6406084c58
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233146
+  packageName: Pet Doctor | Template + Editor
+  packageVersion: v1.5.4
+  assetPath: Assets/Project Files/Game/Scripts/Items/ItemController.cs
+  uploadId: 756368

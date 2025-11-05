@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 2ed3f4c1b8e6f3341b1154a765fb8ee2
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233146
+  packageName: Pet Doctor | Template + Editor
+  packageVersion: v1.5.4
+  assetPath: Assets/Project Files/Game/Scripts/Level/IDoorOpener.cs
+  uploadId: 756368

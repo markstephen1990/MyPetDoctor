@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 928c96dfb34795b4ba62be8e6f124296
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233146
+  packageName: Pet Doctor | Template + Editor
+  packageVersion: v1.5.4
+  assetPath: Assets/Project Files/Game/Prefabs/Levels/Components/Money Stack.prefab
+  uploadId: 756368

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: eeb75361ecc81fc4aae8418013f2ab51
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233146
+  packageName: Pet Doctor | Template + Editor
+  packageVersion: v1.5.4
+  assetPath: Assets/Project Files/Game/Prefabs/Levels/Components/Dispensers/Dispenser
+    Pill.prefab
+  uploadId: 756368

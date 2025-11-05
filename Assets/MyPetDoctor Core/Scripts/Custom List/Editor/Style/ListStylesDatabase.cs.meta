@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 59fe5580b643dc84e96aa72cee017d64
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233146
+  packageName: Pet Doctor | Template + Editor
+  packageVersion: v1.5.4
+  assetPath: Assets/Watermelon Core/Scripts/Custom List/Editor/Style/ListStylesDatabase.cs
+  uploadId: 756368

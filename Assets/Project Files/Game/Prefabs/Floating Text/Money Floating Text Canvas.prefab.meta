@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 835229d4808cff048b06377b17aa6e3e
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233146
+  packageName: Pet Doctor | Template + Editor
+  packageVersion: v1.5.4
+  assetPath: Assets/Project Files/Game/Prefabs/Floating Text/Money Floating Text
+    Canvas.prefab
+  uploadId: 756368

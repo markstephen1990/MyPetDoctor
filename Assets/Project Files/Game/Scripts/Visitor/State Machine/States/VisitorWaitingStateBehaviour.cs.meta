@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 049886d2519e4de40b24969df95940d5
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233146
+  packageName: Pet Doctor | Template + Editor
+  packageVersion: v1.5.4
+  assetPath: Assets/Project Files/Game/Scripts/Visitor/State Machine/States/VisitorWaitingStateBehaviour.cs
+  uploadId: 756368

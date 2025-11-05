@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 89d0999a6244f8346a3078363e371f3c
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233146
+  packageName: Pet Doctor | Template + Editor
+  packageVersion: v1.5.4
+  assetPath: Assets/Project Files/Game/Scripts/Sickness/SicknessDatabase.cs
+  uploadId: 756368

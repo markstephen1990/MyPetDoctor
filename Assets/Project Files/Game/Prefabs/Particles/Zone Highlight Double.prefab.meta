@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d773d301d86b3254180a6887af308eef
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233146
+  packageName: Pet Doctor | Template + Editor
+  packageVersion: v1.5.4
+  assetPath: Assets/Project Files/Game/Prefabs/Particles/Zone Highlight Double.prefab
+  uploadId: 756368

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4c45fcd4d2b213f4c863add8554c76ae
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233146
+  packageName: Pet Doctor | Template + Editor
+  packageVersion: v1.5.4
+  assetPath: Assets/Project Files/Game/Prefabs/Levels/Buildings/Interactable Zones/Interactable
+    Zone Trigger.prefab
+  uploadId: 756368

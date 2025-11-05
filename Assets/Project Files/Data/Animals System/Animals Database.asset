@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57349a3aeff70ac4bb5f8782ea8c14e0, type: 3}
+  m_Name: Animals Database
+  m_EditorClassIdentifier: 
+  animals:
+  - animalType: 0
+    prefab: {fileID: 3723217540529644781, guid: f189ed0d00cbd494e9c7ddb2adf40746,
+      type: 3}
+    carryingHeight: 1.15
+    reward:
+      currencyType: 0
+      amount: 20
+  - animalType: 1
+    prefab: {fileID: 4940788795420556183, guid: a7f5f3d0368b3f84c8854fc9f09f48c6,
+      type: 3}
+    carryingHeight: 1.15
+    reward:
+      currencyType: 0
+      amount: 20
+  - animalType: 2
+    prefab: {fileID: 6824056633908700397, guid: e1e2bfd57f1707645ba5065336a429a6,
+      type: 3}
+    carryingHeight: 1.15
+    reward:
+      currencyType: 0
+      amount: 20
+  - animalType: 3
+    prefab: {fileID: 7329176190649520718, guid: 2499abf9b50c954419c4c124aa72a495,
+      type: 3}
+    carryingHeight: 1.15
+    reward:
+      currencyType: 0
+      amount: 20
+  - animalType: 4
+    prefab: {fileID: 2921632596715241418, guid: af4ee10a2459b814f8dbb380928df496,
+      type: 3}
+    carryingHeight: 1.15
+    reward:
+      currencyType: 0
+      amount: 20
+  visitorPrefabs:
+  - {fileID: 5262757210971853380, guid: c0da9eb5f50c4b648b08ada6f3895276, type: 3}
+  - {fileID: 6599970125574089784, guid: 4bb82ec4203133946b589c3020a83d53, type: 3}
+  - {fileID: 4685316883534936984, guid: 2a83a0f57066c3b4aaf64c70c8eef0fc, type: 3}
+  - {fileID: 2825645934942483270, guid: e37b70e4ef15ea944afd5b5c0005bae3, type: 3}
+  - {fileID: 8558242874603360054, guid: c97b74cb85571884eae8889265ac9a6e, type: 3}
+  - {fileID: 328638200191334343, guid: 15caede2f71f70e48bf40b01541fe680, type: 3}
+  - {fileID: 1301995182150860160, guid: acd06c6c6a3956347a6e44f89d23203e, type: 3}
+  - {fileID: 2028137394414878629, guid: 8312e10469d5b284d914ddf2e5c696be, type: 3}

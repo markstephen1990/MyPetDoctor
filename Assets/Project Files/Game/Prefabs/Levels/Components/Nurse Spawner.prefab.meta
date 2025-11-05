@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: f94f2e645b9e09145a1e640f8617930d
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233146
+  packageName: Pet Doctor | Template + Editor
+  packageVersion: v1.5.4
+  assetPath: Assets/Project Files/Game/Prefabs/Levels/Components/Nurse Spawner.prefab
+  uploadId: 756368

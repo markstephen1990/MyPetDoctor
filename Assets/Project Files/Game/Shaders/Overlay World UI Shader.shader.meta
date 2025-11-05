@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 7a22231c9a0ae0b43a92cb86cb46e54f
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  preprocessorOverride: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233146
+  packageName: Pet Doctor | Template + Editor
+  packageVersion: v1.5.4
+  assetPath: Assets/Project Files/Game/Shaders/Overlay World UI Shader.shader
+  uploadId: 756368

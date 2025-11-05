@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: cf85612449d11464fbd21029da85394e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233146
+  packageName: Pet Doctor | Template + Editor
+  packageVersion: v1.5.4
+  assetPath: Assets/Watermelon Core/Modules/Monetization/Scripts/Advertisement/DebugGeography.cs
+  uploadId: 756368

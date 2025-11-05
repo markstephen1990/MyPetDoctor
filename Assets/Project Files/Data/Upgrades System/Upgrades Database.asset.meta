@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 02bdee07714c57d40ad9938db077dcd4
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233146
+  packageName: Pet Doctor | Template + Editor
+  packageVersion: v1.5.4
+  assetPath: Assets/Project Files/Data/Upgrades System/Upgrades Database.asset
+  uploadId: 756368

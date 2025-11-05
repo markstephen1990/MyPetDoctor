@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: b8ab09857b3336d429ca6bfaba0135a7
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233146
+  packageName: Pet Doctor | Template + Editor
+  packageVersion: v1.5.4
+  assetPath: Assets/Project Files/Game/Prefabs/UI/Secretary/Doctor UI.prefab
+  uploadId: 756368

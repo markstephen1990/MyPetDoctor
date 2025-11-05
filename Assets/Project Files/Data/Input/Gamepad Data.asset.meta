@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 1ba95aeade9c4e1408b0c6ea776a3ec9
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233146
+  packageName: Pet Doctor | Template + Editor
+  packageVersion: v1.5.4
+  assetPath: Assets/Project Files/Data/Input/Gamepad Data.asset
+  uploadId: 756368

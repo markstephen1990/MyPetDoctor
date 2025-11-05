@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 723a6f7aa23e3924d9498e95f858bcab
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233146
+  packageName: Pet Doctor | Template + Editor
+  packageVersion: v1.5.4
+  assetPath: Assets/Project Files/Game/Animations/Characters/Visitor/Visitor Animator.controller
+  uploadId: 756368

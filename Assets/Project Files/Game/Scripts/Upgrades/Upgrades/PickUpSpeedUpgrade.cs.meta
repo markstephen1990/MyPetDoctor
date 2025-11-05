@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: e228e24657b7a5e44aa9c373ca7f807a
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233146
+  packageName: Pet Doctor | Template + Editor
+  packageVersion: v1.5.4
+  assetPath: Assets/Project Files/Game/Scripts/Upgrades/Upgrades/PickUpSpeedUpgrade.cs
+  uploadId: 756368

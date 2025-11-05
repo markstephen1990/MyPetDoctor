@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: fe7762f2e6e42d74181f6ada19996226
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233146
+  packageName: Pet Doctor | Template + Editor
+  packageVersion: v1.5.4
+  assetPath: Assets/Project Files/Game/Prefabs/Player/Player.prefab
+  uploadId: 756368

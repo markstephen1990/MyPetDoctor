@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: becc01f3b8c7a254190b5b544f09215d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233146
+  packageName: Pet Doctor | Template + Editor
+  packageVersion: v1.5.4
+  assetPath: Assets/Project Files/Game/Scripts/Upgrades/UI/CurrencyButtonBehaviour.cs
+  uploadId: 756368

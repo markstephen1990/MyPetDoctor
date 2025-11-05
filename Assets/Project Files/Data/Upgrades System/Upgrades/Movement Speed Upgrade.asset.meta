@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 74159ad7337b50744a6201ec0392d022
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233146
+  packageName: Pet Doctor | Template + Editor
+  packageVersion: v1.5.4
+  assetPath: Assets/Project Files/Data/Upgrades System/Upgrades/Movement Speed Upgrade.asset
+  uploadId: 756368

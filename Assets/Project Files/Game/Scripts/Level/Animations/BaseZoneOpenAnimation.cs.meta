@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 5774623258cf4174ab4e7d5821d98862
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233146
+  packageName: Pet Doctor | Template + Editor
+  packageVersion: v1.5.4
+  assetPath: Assets/Project Files/Game/Scripts/Level/Animations/BaseZoneOpenAnimation.cs
+  uploadId: 756368

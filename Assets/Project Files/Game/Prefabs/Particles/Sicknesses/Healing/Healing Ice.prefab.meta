@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4d44da1ac4e51e74e8804820fd1d0fb9
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233146
+  packageName: Pet Doctor | Template + Editor
+  packageVersion: v1.5.4
+  assetPath: Assets/Project Files/Game/Prefabs/Particles/Sicknesses/Healing/Healing
+    Ice.prefab
+  uploadId: 756368

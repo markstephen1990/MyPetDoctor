@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: cee41304f3f7945449378fe931184a82
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233146
+  packageName: Pet Doctor | Template + Editor
+  packageVersion: v1.5.4
+  assetPath: Assets/Project Files/Data/Animals System/Sicknesses Database.asset
+  uploadId: 756368

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c11eb29d285601d40ba38f0952691719
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 233146
+  packageName: Pet Doctor | Template + Editor
+  packageVersion: v1.5.4
+  assetPath: Assets/Project Files/Game/Prefabs/Levels/Components/Dispensers/Dispenser
+    Soap.prefab
+  uploadId: 756368
