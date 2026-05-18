@@ -2,7 +2,7 @@
 using UnityEditor;
 using System;
 
-namespace Watermelon
+namespace FernGames
 {
     public static class HelpMenus
     {

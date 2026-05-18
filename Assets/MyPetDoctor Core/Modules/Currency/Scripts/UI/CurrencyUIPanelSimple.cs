@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Watermelon
+namespace FernGames
 {
     [System.Serializable]
     public class CurrencyUIPanelSimple : MonoBehaviour

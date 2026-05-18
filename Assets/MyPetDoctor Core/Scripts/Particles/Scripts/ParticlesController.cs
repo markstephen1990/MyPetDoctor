@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Watermelon
+namespace FernGames
 {
     public class ParticlesController : MonoBehaviour
     {

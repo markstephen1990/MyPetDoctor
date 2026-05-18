@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Watermelon
+namespace FernGames
 {
     [AttributeUsage(AttributeTargets.Field | AttributeTargets.Method | AttributeTargets.Property, AllowMultiple = false, Inherited = true)]
     public class InfoBoxAttribute : Attribute

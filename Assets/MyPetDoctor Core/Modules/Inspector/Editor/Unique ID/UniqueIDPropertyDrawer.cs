@@ -2,7 +2,7 @@
 using UnityEditor.SceneManagement;
 using UnityEngine;
 
-namespace Watermelon
+namespace FernGames
 {
 
     [CustomPropertyDrawer(typeof(UniqueIDAttribute), true)]

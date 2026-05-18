@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
-using Watermelon.Upgrades;
+using FernGames.Upgrades;
 
-namespace Watermelon
+namespace FernGames
 {
     [CreateAssetMenu(fileName = "Pick Up Speed Upgrade", menuName = "Data/Upgrades/Pick Up Speed Upgrade")]
     public class PickUpSpeedUpgrade : Upgrade<PickUpSpeedUpgrade.PickUpSpeedStage>

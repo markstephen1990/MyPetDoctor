@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEditor;
 
-namespace Watermelon
+namespace FernGames
 {
     [CustomPropertyDrawer(typeof(UIScaleAnimation))]
     public class UIScaleAnimationPropertyDrawer : PropertyDrawer

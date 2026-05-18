@@ -8,7 +8,7 @@ using UnityEditor.SceneManagement;
 using UnityEngine.SceneManagement;
 using System.Reflection;
 
-namespace Watermelon
+namespace FernGames
 {
     [CustomEditor(typeof(PoolManager))]
     sealed internal class PoolManagerEditor : Editor

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-namespace Watermelon
+namespace FernGames
 {
     public static class WorldSpaceRaycaster
     {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-namespace Watermelon
+namespace FernGames
 {
     [CustomPropertyDrawer(typeof(SceneObject))]
     public class SceneObjectPropertyDrawer : UnityEditor.PropertyDrawer

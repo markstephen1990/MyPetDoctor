@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace Watermelon
+namespace FernGames
 {
     /// <example>
     /// [CreateAssetMenu(fileName = "Type Skin Database", menuName = "Data/Skins/Type Skin Database")]

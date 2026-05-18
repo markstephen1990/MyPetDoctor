@@ -12,7 +12,7 @@ using UnityEngine.U2D;
 using TMPro;
 #endif
 
-namespace Watermelon
+namespace FernGames
 {
     [CustomEditor(typeof(CurrencyDatabase))]
     public class CurrencyDatabaseEditor : CustomInspector

@@ -8,7 +8,7 @@ using UnityEditor;
 using UnityEditorInternal;
 #endif
 
-namespace Watermelon
+namespace FernGames
 {
     public static class RuntimeEditorUtils
     {        

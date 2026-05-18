@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Watermelon
+namespace FernGames
 {
     [AttributeUsage(AttributeTargets.Field, AllowMultiple = false, Inherited = true)]
     public class MinMaxSliderAttribute : PropertyAttribute

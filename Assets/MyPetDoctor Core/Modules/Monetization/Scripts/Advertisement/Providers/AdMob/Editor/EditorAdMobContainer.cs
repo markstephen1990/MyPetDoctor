@@ -3,7 +3,7 @@ using UnityEditor;
 using System;
 using System.Reflection;
 
-namespace Watermelon
+namespace FernGames
 {
     public class EditorAdMobContainer : EditorAdsContainer
     {
@@ -196,26 +196,26 @@ namespace Watermelon
         private void DrawAddUnitsSection()
         {
             EditorGUILayout.LabelField("Banner ID", groupStyle);
-            DrawIdProperty(androidBannerIdProperty, Watermelon.AdMobContainer.ANDROID_BANNER_TEST_ID);
-            DrawIdProperty(iOSBannerIdProperty, Watermelon.AdMobContainer.IOS_BANNER_TEST_ID);
+            DrawIdProperty(androidBannerIdProperty, FernGames.AdMobContainer.ANDROID_BANNER_TEST_ID);
+            DrawIdProperty(iOSBannerIdProperty, FernGames.AdMobContainer.IOS_BANNER_TEST_ID);
 
             EditorGUILayout.PropertyField(bannerTypeProperty);
             EditorGUILayout.PropertyField(bannerPositionProperty);
 
             EditorGUILayout.LabelField("Interstitial ID", groupStyle);
-            DrawIdProperty(androidInterstitialIdProperty, Watermelon.AdMobContainer.ANDROID_INTERSTITIAL_TEST_ID);
-            DrawIdProperty(iOSInterstitialIdProperty, Watermelon.AdMobContainer.IOS_INTERSTITIAL_TEST_ID);
+            DrawIdProperty(androidInterstitialIdProperty, FernGames.AdMobContainer.ANDROID_INTERSTITIAL_TEST_ID);
+            DrawIdProperty(iOSInterstitialIdProperty, FernGames.AdMobContainer.IOS_INTERSTITIAL_TEST_ID);
 
             EditorGUILayout.LabelField("Rewarded Video ID", groupStyle);
-            DrawIdProperty(androidRewardedVideoIdProperty, Watermelon.AdMobContainer.ANDROID_REWARDED_VIDEO_TEST_ID);
-            DrawIdProperty(iOSRewardedVideoIdProperty, Watermelon.AdMobContainer.IOS_REWARDED_VIDEO_TEST_ID);
+            DrawIdProperty(androidRewardedVideoIdProperty, FernGames.AdMobContainer.ANDROID_REWARDED_VIDEO_TEST_ID);
+            DrawIdProperty(iOSRewardedVideoIdProperty, FernGames.AdMobContainer.IOS_REWARDED_VIDEO_TEST_ID);
 
             EditorGUILayout.LabelField("App Open AD", groupStyle);
             EditorGUILayout.PropertyField(useAppOpenAdProperty);
             if (useAppOpenAdProperty.boolValue)
             {
-                DrawIdProperty(androidAppOpenAdIDProperty, Watermelon.AdMobContainer.ANDROID_OPEN_TEST_ID);
-                DrawIdProperty(iosAppOpenAdIDProperty, Watermelon.AdMobContainer.IOS_OPEN_TEST_ID);
+                DrawIdProperty(androidAppOpenAdIDProperty, FernGames.AdMobContainer.ANDROID_OPEN_TEST_ID);
+                DrawIdProperty(iosAppOpenAdIDProperty, FernGames.AdMobContainer.IOS_OPEN_TEST_ID);
             }
 
             EditorGUILayout.LabelField("Debug", EditorCustomStyles.labelMediumBold);
@@ -236,17 +236,17 @@ namespace Watermelon
 
             if (GUILayout.Button("Set test ids", EditorCustomStyles.button))
             {
-                androidBannerIdProperty.stringValue = Watermelon.AdMobContainer.ANDROID_BANNER_TEST_ID;
-                iOSBannerIdProperty.stringValue = Watermelon.AdMobContainer.IOS_BANNER_TEST_ID;
+                androidBannerIdProperty.stringValue = FernGames.AdMobContainer.ANDROID_BANNER_TEST_ID;
+                iOSBannerIdProperty.stringValue = FernGames.AdMobContainer.IOS_BANNER_TEST_ID;
 
-                androidInterstitialIdProperty.stringValue = Watermelon.AdMobContainer.ANDROID_INTERSTITIAL_TEST_ID;
-                iOSInterstitialIdProperty.stringValue = Watermelon.AdMobContainer.IOS_INTERSTITIAL_TEST_ID;
+                androidInterstitialIdProperty.stringValue = FernGames.AdMobContainer.ANDROID_INTERSTITIAL_TEST_ID;
+                iOSInterstitialIdProperty.stringValue = FernGames.AdMobContainer.IOS_INTERSTITIAL_TEST_ID;
 
-                androidRewardedVideoIdProperty.stringValue = Watermelon.AdMobContainer.ANDROID_REWARDED_VIDEO_TEST_ID;
-                iOSRewardedVideoIdProperty.stringValue = Watermelon.AdMobContainer.IOS_REWARDED_VIDEO_TEST_ID;
+                androidRewardedVideoIdProperty.stringValue = FernGames.AdMobContainer.ANDROID_REWARDED_VIDEO_TEST_ID;
+                iOSRewardedVideoIdProperty.stringValue = FernGames.AdMobContainer.IOS_REWARDED_VIDEO_TEST_ID;
 
-                androidAppOpenAdIDProperty.stringValue = Watermelon.AdMobContainer.ANDROID_OPEN_TEST_ID;
-                iosAppOpenAdIDProperty.stringValue = Watermelon.AdMobContainer.IOS_OPEN_TEST_ID;
+                androidAppOpenAdIDProperty.stringValue = FernGames.AdMobContainer.ANDROID_OPEN_TEST_ID;
+                iosAppOpenAdIDProperty.stringValue = FernGames.AdMobContainer.IOS_OPEN_TEST_ID;
             }
         }
 

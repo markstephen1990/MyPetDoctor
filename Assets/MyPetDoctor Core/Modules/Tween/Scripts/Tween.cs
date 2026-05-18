@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-namespace Watermelon
+namespace FernGames
 {
     [StaticUnload]
     public class Tween : MonoBehaviour

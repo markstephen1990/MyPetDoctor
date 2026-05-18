@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using UnityEngine;
 
-namespace Watermelon
+namespace FernGames
 {
     public class WebGLSaveWrapper : BaseSaveWrapper
     {

@@ -1,7 +1,7 @@
 ﻿using UnityEditor;
 using UnityEngine;
 
-namespace Watermelon
+namespace FernGames
 {
     [CustomPropertyDrawer(typeof(DuoInt)), CustomPropertyDrawer(typeof(DuoFloat)), CustomPropertyDrawer(typeof(DuoDouble))]
     public class DuoTypeDrawer : UnityEditor.PropertyDrawer

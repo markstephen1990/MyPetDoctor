@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.Purchasing;
 #endif
 
-namespace Watermelon
+namespace FernGames
 {
     [StaticUnload]
     public static class IAPManager
@@ -172,7 +172,7 @@ namespace Watermelon
             PurchaseCompleted?.Invoke(productKey);
         }
 
-        public static void OnPurchaseFailed(ProductKeyType productKey, Watermelon.PurchaseFailureReason failureReason)
+        public static void OnPurchaseFailed(ProductKeyType productKey, FernGames.PurchaseFailureReason failureReason)
         {
             PurchaseFailed?.Invoke(productKey, failureReason);
         }
@@ -200,6 +200,6 @@ namespace Watermelon
         }
 
         public delegate void ProductCallback(ProductKeyType productKeyType);
-        public delegate void ProductFailCallback(ProductKeyType productKeyType, Watermelon.PurchaseFailureReason failureReason);
+        public delegate void ProductFailCallback(ProductKeyType productKeyType, FernGames.PurchaseFailureReason failureReason);
     }
 }

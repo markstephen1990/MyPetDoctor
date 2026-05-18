@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Watermelon.Upgrades
+namespace FernGames.Upgrades
 {
     public interface IUpgrade
     {

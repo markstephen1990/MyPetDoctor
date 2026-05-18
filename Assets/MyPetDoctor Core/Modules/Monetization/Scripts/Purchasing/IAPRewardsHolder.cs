@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Watermelon
+namespace FernGames
 {
     public sealed class IAPRewardsHolder : RewardsHolder
     {

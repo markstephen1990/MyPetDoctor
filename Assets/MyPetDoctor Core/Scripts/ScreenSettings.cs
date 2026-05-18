@@ -3,7 +3,7 @@
 
 using UnityEngine;
 
-namespace Watermelon
+namespace FernGames
 {
     [RegisterModule("Screen Settings", false)]
     public class ScreenSettings : InitModule

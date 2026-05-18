@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Watermelon
+namespace FernGames
 {
     [StaticUnload]
     public static class Haptic

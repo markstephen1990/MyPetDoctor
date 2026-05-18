@@ -4,7 +4,7 @@
 using Unity.Advertisement.IosSupport;
 #endif
 
-namespace Watermelon
+namespace FernGames
 {
     public sealed class IDFALoadingTask : LoadingTask
     {

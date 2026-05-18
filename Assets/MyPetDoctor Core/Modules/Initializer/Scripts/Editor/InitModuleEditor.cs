@@ -1,6 +1,6 @@
 ﻿using UnityEditor;
 
-namespace Watermelon
+namespace FernGames
 {
     public abstract class InitModuleEditor : CustomInspector
     {

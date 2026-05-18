@@ -1,6 +1,6 @@
 ﻿using UnityEngine.SceneManagement;
 
-namespace Watermelon
+namespace FernGames
 {
     public static class SceneUtils
     {

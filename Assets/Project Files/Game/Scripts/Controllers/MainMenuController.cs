@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-namespace Watermelon
+namespace FernGames
 {
     public class MainMenuController : MonoBehaviour
     {

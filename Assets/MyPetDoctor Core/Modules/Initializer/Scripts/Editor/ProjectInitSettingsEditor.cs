@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Collections;
 using System.IO;
 
-namespace Watermelon
+namespace FernGames
 {
     [CustomEditor(typeof(ProjectInitSettings))]
     public class ProjectInitSettingsEditor : Editor

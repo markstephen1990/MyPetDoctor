@@ -1,9 +1,9 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
-using Watermelon.LevelSystem;
+using FernGames.LevelSystem;
 
-namespace Watermelon
+namespace FernGames
 {
     [RequireComponent(typeof(NavMeshAgent), typeof(Collider))]
     public class VisitorBehaviour : MonoBehaviour, IAnimalCarrying, IAnimalHolder, IDoorOpener

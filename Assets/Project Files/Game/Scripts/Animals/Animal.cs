@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Watermelon
+namespace FernGames
 {
     [System.Serializable]
     public class Animal
@@ -38,6 +38,9 @@ namespace Watermelon
             Cat_03 = 2,
             Cat_04 = 3,
             Cat_05 = 4,
+            Cat_06 = 5,
+            Cat_07 = 6,
+            Cat_08 = 7
         }
     }
 }

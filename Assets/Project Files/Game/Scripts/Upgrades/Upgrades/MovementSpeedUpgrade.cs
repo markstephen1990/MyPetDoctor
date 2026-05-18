@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
-using Watermelon.Upgrades;
+using FernGames.Upgrades;
 
-namespace Watermelon
+namespace FernGames
 {
     [CreateAssetMenu(fileName = "Movement Speed Upgrade", menuName = "Data/Upgrades/Movement Speed Upgrade")]
     public class MovementSpeedUpgrade : Upgrade<MovementSpeedUpgrade.MovementSpeedStage>

@@ -7,7 +7,7 @@ using GoogleMobileAds.Api;
 using GoogleMobileAds.Common;
 #endif
 
-namespace Watermelon
+namespace FernGames
 {
 #if MODULE_ADMOB
     /// <summary>

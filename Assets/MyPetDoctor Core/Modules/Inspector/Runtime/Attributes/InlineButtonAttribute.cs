@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Watermelon
+namespace FernGames
 {
     [AttributeUsage(AttributeTargets.Property | AttributeTargets.Field, AllowMultiple = true, Inherited = true)]
     public class InlineButtonAttribute : Attribute

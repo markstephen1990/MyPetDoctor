@@ -1,7 +1,7 @@
 ﻿using System.Runtime.InteropServices;
 using UnityEngine;
 
-namespace Watermelon
+namespace FernGames
 {
     public sealed class IOSHapticWrapper : BaseHapticWrapper
     {

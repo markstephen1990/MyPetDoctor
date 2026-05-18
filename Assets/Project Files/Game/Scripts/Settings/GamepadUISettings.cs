@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Watermelon
+namespace FernGames
 {
     [RequireComponent(typeof(UISettings))]
     public class GamepadUISettings : MonoBehaviour

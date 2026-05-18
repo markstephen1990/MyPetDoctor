@@ -4,7 +4,7 @@ using System;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Watermelon
+namespace FernGames
 {
     public class AdsManagerExampleScript : MonoBehaviour
     {

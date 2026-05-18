@@ -12,7 +12,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
-namespace Watermelon
+namespace FernGames
 {
     public static class CoreExtensions
     {

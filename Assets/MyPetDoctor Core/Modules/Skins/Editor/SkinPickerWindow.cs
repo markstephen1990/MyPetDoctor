@@ -5,7 +5,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using Object = UnityEngine.Object;
 
-namespace Watermelon
+namespace FernGames
 {
     public class SkinPickerWindow : EditorWindow
     {

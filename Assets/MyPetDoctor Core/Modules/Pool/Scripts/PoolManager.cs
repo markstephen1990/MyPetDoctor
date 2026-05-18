@@ -3,7 +3,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-namespace Watermelon
+namespace FernGames
 {
     /// <summary>
     /// Class that manages all pool operations.

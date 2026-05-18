@@ -1,7 +1,7 @@
 ﻿using System;
 using Random = UnityEngine.Random;
 
-namespace Watermelon
+namespace FernGames
 {
     public static class EnumUtils
     {

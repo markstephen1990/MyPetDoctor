@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Watermelon
+namespace FernGames
 {
     [AttributeUsage(AttributeTargets.Class, AllowMultiple = false, Inherited = true)]
     public abstract class BaseAttribute : Attribute

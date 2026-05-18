@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Watermelon
+namespace FernGames
 {
     [RegisterModule("Monetization")]
     public class MonetizationInitModule : InitModule

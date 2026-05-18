@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Watermelon.Upgrades
+namespace FernGames.Upgrades
 {
     [System.Serializable]
     public abstract class BaseUpgradeStage

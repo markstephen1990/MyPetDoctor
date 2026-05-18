@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Watermelon
+namespace FernGames
 {
     public class DefineString
     {

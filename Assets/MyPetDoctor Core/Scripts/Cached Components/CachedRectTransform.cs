@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Watermelon
+namespace FernGames
 {
     [System.Serializable]
     public sealed class CachedRectTransform : ICachedComponent<RectTransform>

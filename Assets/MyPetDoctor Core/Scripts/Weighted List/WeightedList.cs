@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-namespace Watermelon
+namespace FernGames
 {
     [System.Serializable]
     public class WeightedList<T> where T : class

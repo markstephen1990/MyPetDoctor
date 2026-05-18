@@ -2,7 +2,7 @@ using System;
 using UnityEditor;
 using UnityEngine;
 
-namespace Watermelon
+namespace FernGames
 {
     [InitializeOnLoad]
     public static class MonetizationPlatformDetector

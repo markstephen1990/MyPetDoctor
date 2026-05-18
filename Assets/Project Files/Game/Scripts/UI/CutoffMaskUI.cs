@@ -2,7 +2,7 @@
 using UnityEngine.Rendering;
 using UnityEngine.UI;
 
-namespace Watermelon
+namespace FernGames
 {
     public class CutoffMaskUI : Image
     {

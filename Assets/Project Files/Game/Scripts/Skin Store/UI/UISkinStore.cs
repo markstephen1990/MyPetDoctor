@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-namespace Watermelon.SkinStore
+namespace FernGames.SkinStore
 {
     public class UISkinStore : UIPage
     {

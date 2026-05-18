@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Watermelon
+namespace FernGames
 {
     [AttributeUsage(AttributeTargets.Class, AllowMultiple = false)]
     public class RegisterModuleAttribute : Attribute

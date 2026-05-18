@@ -2,7 +2,7 @@
 using UnityEditor;
 using System.Collections.Generic;
 
-namespace Watermelon
+namespace FernGames
 {
 
     public class AboutWindow : EditorWindow

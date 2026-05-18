@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Watermelon
+namespace FernGames
 {
     [AttributeUsage(AttributeTargets.Field, AllowMultiple = true, Inherited = true)]
     public class OnValueChangedAttribute : Attribute

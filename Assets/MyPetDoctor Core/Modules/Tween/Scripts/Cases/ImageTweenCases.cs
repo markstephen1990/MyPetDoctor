@@ -1,6 +1,6 @@
 ﻿using UnityEngine.UI;
 
-namespace Watermelon
+namespace FernGames
 {
     public static class ImageTweenCases
     {

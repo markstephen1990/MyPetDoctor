@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Watermelon
+namespace FernGames
 {
     [Serializable]
     public class GlobalLevelSave : ISaveObject

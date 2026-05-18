@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Watermelon
+namespace FernGames
 {
     [RequireComponent(typeof(Canvas))]
     public class FadeOverlayPanel : MonoBehaviour, IOverlayPanel

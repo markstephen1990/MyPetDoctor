@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Watermelon
+namespace FernGames
 {
     public static class CustomAttributesDatabase
     {

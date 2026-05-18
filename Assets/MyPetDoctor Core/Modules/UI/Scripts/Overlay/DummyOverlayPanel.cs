@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-namespace Watermelon
+namespace FernGames
 {
     public class DummyOverlayPanel : IOverlayPanel
     {

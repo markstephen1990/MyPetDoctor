@@ -2,9 +2,9 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using Watermelon.Upgrades;
+using FernGames.Upgrades;
 
-namespace Watermelon
+namespace FernGames
 {
     public class UISecretaryWindow : UIPage
     {

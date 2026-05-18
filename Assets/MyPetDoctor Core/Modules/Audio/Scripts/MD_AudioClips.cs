@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Watermelon
+namespace FernGames
 {
     [CreateAssetMenu(fileName = "Audio Clips", menuName = "Data/Core/Audio Clips")]
     public class AudioClips : ScriptableObject

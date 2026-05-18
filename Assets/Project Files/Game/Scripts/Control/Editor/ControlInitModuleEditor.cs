@@ -1,6 +1,6 @@
 using UnityEditor;
 
-namespace Watermelon
+namespace FernGames
 {
     [CustomEditor(typeof(ControlInitModule))]
     public class ControlInitModuleEditor : InitModuleEditor

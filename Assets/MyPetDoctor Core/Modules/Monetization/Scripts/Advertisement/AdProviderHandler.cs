@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
 using UnityEngine;
 
-namespace Watermelon
+namespace FernGames
 {
     /// <summary>
     /// Abstract base class for managing ad providers. Specific ad providers like AdMob, UnityAds, etc. should inherit from this class.

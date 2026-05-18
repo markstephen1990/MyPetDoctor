@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using Unity.AI.Navigation;
 
-namespace Watermelon.LevelSystem
+namespace FernGames.LevelSystem
 {
     public class NavMeshSurfaceTweenCase : TweenCase
     {

@@ -2,7 +2,7 @@
 
 using UnityEngine;
 
-namespace Watermelon
+namespace FernGames
 {
     [RegisterModule("Tween", core: true, order: 800)]
     public class TweenInitModule : InitModule

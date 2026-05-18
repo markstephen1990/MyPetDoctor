@@ -1,7 +1,7 @@
 using UnityEngine;
-using Watermelon.LevelSystem;
+using FernGames.LevelSystem;
 
-namespace Watermelon
+namespace FernGames
 {
     public class TableBehaviour : MonoBehaviour, IAnimalHolder, IPurchaseObject
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Watermelon
+namespace FernGames
 {
     [AttributeUsage(AttributeTargets.Field, AllowMultiple = false, Inherited = true)]
     public class UnpackNestedAttribute : Attribute

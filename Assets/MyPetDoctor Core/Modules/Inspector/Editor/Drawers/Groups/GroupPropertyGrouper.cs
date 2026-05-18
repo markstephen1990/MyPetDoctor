@@ -1,6 +1,6 @@
 ﻿using UnityEditor;
 
-namespace Watermelon
+namespace FernGames
 {
     [PropertyGrouper(typeof(GroupAttribute))]
     public class GroupPropertyGrouper : PropertyGrouper

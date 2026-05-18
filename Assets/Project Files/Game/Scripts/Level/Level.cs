@@ -2,7 +2,7 @@ using System.Linq;
 using UnityEditor;
 using UnityEngine;
 
-namespace Watermelon
+namespace FernGames
 {
     public class Level : MonoBehaviour, ISceneSavingCallback
     {

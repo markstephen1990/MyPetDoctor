@@ -1,7 +1,7 @@
 ﻿using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
-namespace Watermelon
+namespace FernGames
 {
     public class SettingsMenuButton : SettingsButtonBase
     {

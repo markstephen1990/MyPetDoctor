@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-namespace Watermelon
+namespace FernGames
 {
     [CustomEditor(typeof(TableBehaviour))]
     public class TableBehaviourEditor : CustomInspector

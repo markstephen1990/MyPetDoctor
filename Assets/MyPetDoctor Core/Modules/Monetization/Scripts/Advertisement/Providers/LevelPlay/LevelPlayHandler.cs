@@ -7,7 +7,7 @@ using UnityEngine;
 using com.unity3d.mediation;
 #endif
 
-namespace Watermelon
+namespace FernGames
 {
 #if MODULE_LEVELPLAY
     public class LevelPlayHandler : AdProviderHandler

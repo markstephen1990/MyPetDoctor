@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Watermelon
+namespace FernGames
 {
     [CreateAssetMenu(fileName = "Currency Database", menuName = "Data/Core/Currency Database")]
     public class CurrencyDatabase : ScriptableObject

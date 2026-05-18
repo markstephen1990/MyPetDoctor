@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEditor;
 
-namespace Watermelon
+namespace FernGames
 {
     public static class EditorCoroutines
     {

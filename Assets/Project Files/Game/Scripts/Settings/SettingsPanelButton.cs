@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Watermelon
+namespace FernGames
 {
     [RequireComponent(typeof(Button))]
     public class SettingsPanelButton : MonoBehaviour

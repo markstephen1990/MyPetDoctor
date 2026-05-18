@@ -12,7 +12,7 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
+  companyName: Fern Games
   productName: MyPetDoctor
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
@@ -778,7 +778,7 @@ PlayerSettings:
   webGLCloseOnQuit: 0
   webWasm2023: 0
   scriptingDefineSymbols:
-    Standalone: MODULE_INPUT_SYSTEM;MODULE_TMP;MODULE_MONETIZATION;MODULE_HAPTIC
+    Standalone: MODULE_INPUT_SYSTEM;MODULE_TMP
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:
@@ -882,7 +882,7 @@ PlayerSettings:
   cloudProjectId: 2f69bf55-fa07-408e-8668-fe31cf9d353a
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
+  projectName: MyPetDoctor 2025-11-05_23-47-12
   organizationId: mark-stephen
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0

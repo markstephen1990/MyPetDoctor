@@ -1,6 +1,6 @@
 using System;
 
-namespace Watermelon
+namespace FernGames
 {
     [AttributeUsage(AttributeTargets.Class, AllowMultiple = true)]
     public class HelpButtonAttribute : Attribute

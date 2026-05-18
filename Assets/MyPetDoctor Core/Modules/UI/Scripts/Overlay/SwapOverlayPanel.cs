@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-namespace Watermelon
+namespace FernGames
 {
     [RequireComponent(typeof(Canvas))]
     public class SwapOverlayPanel : MonoBehaviour, IOverlayPanel

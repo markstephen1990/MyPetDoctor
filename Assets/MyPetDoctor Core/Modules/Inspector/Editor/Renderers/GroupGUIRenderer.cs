@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace Watermelon
+namespace FernGames
 {
     public sealed class GroupGUIRenderer : GUIRenderer
     {

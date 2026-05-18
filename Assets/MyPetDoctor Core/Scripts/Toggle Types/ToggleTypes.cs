@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Serialization;
 
-namespace Watermelon
+namespace FernGames
 {
     [System.Serializable]
     public abstract class ToggleType<T>

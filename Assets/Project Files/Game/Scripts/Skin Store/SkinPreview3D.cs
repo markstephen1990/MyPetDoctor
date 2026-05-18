@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Watermelon.SkinStore
+namespace FernGames.SkinStore
 {
     public class SkinPreview3D : MonoBehaviour
     {

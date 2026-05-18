@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Watermelon
+namespace FernGames
 {
     [System.Serializable]
     public class CurrencyData

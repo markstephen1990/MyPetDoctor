@@ -3,7 +3,7 @@ using System.Reflection;
 using UnityEditor;
 using UnityEngine;
 
-namespace Watermelon
+namespace FernGames
 {
     [CustomPropertyDrawer(typeof(AbstractSkinData), true)]
     public class SkinDataPropertyDrawer : PropertyDrawer, System.IDisposable

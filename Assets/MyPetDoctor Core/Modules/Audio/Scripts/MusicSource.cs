@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Watermelon
+namespace FernGames
 {
     [StaticUnload]
     [RequireComponent(typeof(AudioSource))]

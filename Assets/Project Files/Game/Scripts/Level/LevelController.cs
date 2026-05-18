@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using Unity.AI.Navigation;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using Watermelon.LevelSystem;
-using Watermelon.Upgrades;
+using FernGames.LevelSystem;
+using FernGames.Upgrades;
 
-namespace Watermelon
+namespace FernGames
 {
     public class LevelController : MonoBehaviour
     {

@@ -7,7 +7,7 @@ using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace Watermelon
+namespace FernGames
 {
     [InitializeOnLoad]
     public static class SceneSavingHandler

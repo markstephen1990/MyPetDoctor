@@ -1,6 +1,6 @@
 using System;
 
-namespace Watermelon
+namespace FernGames
 {
     [Flags]
     public enum UIGamepadButtonTag

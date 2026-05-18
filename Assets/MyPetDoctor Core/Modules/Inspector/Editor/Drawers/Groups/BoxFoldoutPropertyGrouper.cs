@@ -1,4 +1,4 @@
-﻿namespace Watermelon
+﻿namespace FernGames
 {
     [PropertyGrouper(typeof(BoxFoldoutAttribute))]
     public class BoxFoldoutPropertyGrouper : PropertyGrouper

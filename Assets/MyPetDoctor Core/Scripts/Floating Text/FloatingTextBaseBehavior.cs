@@ -1,7 +1,7 @@
 using TMPro;
 using UnityEngine;
 
-namespace Watermelon
+namespace FernGames
 {
     public abstract class FloatingTextBaseBehavior : MonoBehaviour
     {

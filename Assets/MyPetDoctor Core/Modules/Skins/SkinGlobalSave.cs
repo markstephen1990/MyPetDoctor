@@ -1,4 +1,4 @@
-﻿namespace Watermelon
+﻿namespace FernGames
 {
     [System.Serializable]
     public class SkinGlobalSave : ISaveObject

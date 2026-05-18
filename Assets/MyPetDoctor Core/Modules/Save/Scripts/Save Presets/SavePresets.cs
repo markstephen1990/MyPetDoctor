@@ -8,7 +8,7 @@ using UnityEditor;
 using UnityEngine;
 using System.IO;
 
-namespace Watermelon
+namespace FernGames
 {
     public class SavePresets
     {

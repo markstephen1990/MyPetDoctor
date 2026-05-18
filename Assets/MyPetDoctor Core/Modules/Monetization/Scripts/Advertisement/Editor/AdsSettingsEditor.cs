@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEditor;
 
-namespace Watermelon
+namespace FernGames
 {
     [CustomEditor(typeof(AdsSettings))]
     public class AdsSettingsEditor : CustomInspector

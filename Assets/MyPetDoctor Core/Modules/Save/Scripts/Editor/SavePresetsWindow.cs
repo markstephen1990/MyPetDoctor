@@ -7,7 +7,7 @@ using UnityEngine;
 using UnityEditorInternal;
 using System.Linq;
 
-namespace Watermelon
+namespace FernGames
 {
     public class SavePresetsWindow : EditorWindow
     {

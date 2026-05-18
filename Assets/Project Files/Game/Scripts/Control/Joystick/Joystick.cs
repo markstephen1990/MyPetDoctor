@@ -2,7 +2,7 @@
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-namespace Watermelon
+namespace FernGames
 {
     [RequireComponent(typeof(Animator))]
     public class Joystick : MonoBehaviour, IPointerDownHandler, IDragHandler, IPointerUpHandler, IControlBehavior

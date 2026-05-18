@@ -48,6 +48,27 @@ MonoBehaviour:
     reward:
       currencyType: 0
       amount: 20
+  - animalType: 5
+    prefab: {fileID: 3723217540529644781, guid: 5198abba3a6e82a4592d329d781e45f2,
+      type: 3}
+    carryingHeight: 1.15
+    reward:
+      currencyType: 0
+      amount: 20
+  - animalType: 6
+    prefab: {fileID: 4940788795420556183, guid: 1f121ca0efcd9ed4ca8eba9e0ba57378,
+      type: 3}
+    carryingHeight: 1.15
+    reward:
+      currencyType: 0
+      amount: 20
+  - animalType: 7
+    prefab: {fileID: 6824056633908700397, guid: 9dbf3d5eac761fd43a9c78b4b1e9b9ef,
+      type: 3}
+    carryingHeight: 1.15
+    reward:
+      currencyType: 0
+      amount: 20
   visitorPrefabs:
   - {fileID: 5262757210971853380, guid: c0da9eb5f50c4b648b08ada6f3895276, type: 3}
   - {fileID: 6599970125574089784, guid: 4bb82ec4203133946b589c3020a83d53, type: 3}

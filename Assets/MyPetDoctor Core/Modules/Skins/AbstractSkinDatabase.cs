@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Watermelon
+namespace FernGames
 {
     public abstract class AbstractSkinDatabase : ScriptableObject
     {

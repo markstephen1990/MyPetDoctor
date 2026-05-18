@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Watermelon
+namespace FernGames
 {
     [RequireComponent(typeof(Zone))]
     public abstract class BaseZoneOpenAnimation : MonoBehaviour, ISceneSavingCallback

@@ -2,7 +2,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace Watermelon
+namespace FernGames
 {
     [InitializeOnLoad]
     public static class AutoInitializerLoader

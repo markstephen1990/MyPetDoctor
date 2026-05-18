@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using UnityEngine;
 
-namespace Watermelon
+namespace FernGames
 {
     [CreateAssetMenu(fileName = "Core Settings", menuName = "Data/Core/Core Settings")]
     public class CoreSettings : ScriptableObject

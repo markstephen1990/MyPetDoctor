@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Watermelon
+namespace FernGames
 {
     [RegisterModule("Currencies", false)]
     public class CurrencyInitModule : InitModule

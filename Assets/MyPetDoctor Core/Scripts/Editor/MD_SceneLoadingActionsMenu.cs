@@ -3,7 +3,7 @@ using UnityEditor;
 using UnityEditor.SceneManagement;
 using System.IO;
 
-namespace Watermelon
+namespace FernGames
 {
     public static class SceneLoadingActionsMenu
     {

@@ -1,7 +1,7 @@
 using UnityEngine;
-using Watermelon.SkinStore;
+using FernGames.SkinStore;
 
-namespace Watermelon
+namespace FernGames
 {
     public class GameController : MonoBehaviour
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Watermelon
+namespace FernGames
 {
     public class PropertyGrouperAttribute : BaseAttribute
     {

@@ -3,7 +3,7 @@ using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine;
 
-namespace Watermelon
+namespace FernGames
 {
     [InitializeOnLoad]
     public static class EditorCustomHierarchy

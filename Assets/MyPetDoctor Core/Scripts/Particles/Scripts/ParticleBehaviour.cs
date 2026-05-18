@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Watermelon
+namespace FernGames
 {
     /// <summary>
     /// Base class for defining custom behavior for particles.

@@ -7,7 +7,7 @@ using System.Reflection;
 using System.Collections.Generic;
 using System;
 
-namespace Watermelon
+namespace FernGames
 {
     public class AudioSettingsEditorWindow : EditorWindow
     {

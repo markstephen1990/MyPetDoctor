@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Watermelon
+namespace FernGames
 {
     [RequireComponent(typeof(Transform))]
     public class ScaleTweenBehavior : TweenBehavior<Transform, Vector3>

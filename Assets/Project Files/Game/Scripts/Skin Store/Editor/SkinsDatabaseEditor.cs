@@ -5,9 +5,9 @@ using UnityEditor;
 using System;
 using System.Text;
 using System.IO;
-using Watermelon.List;
+using FernGames.List;
 
-namespace Watermelon.SkinStore
+namespace FernGames.SkinStore
 {
     [CustomEditor(typeof(SkinStoreDatabase))]
     public class SkinsDatabaseEditor : Editor

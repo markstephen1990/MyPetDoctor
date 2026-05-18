@@ -1,30 +1,28 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using UnityEngine;
-using System;
-
 
 #if MODULE_IAP
 using UnityEngine.Purchasing;
-using UnityEngine.Purchasing.Extension;
 using Unity.Services.Core;
 using Unity.Services.Core.Environments;
 #endif
 
-namespace Watermelon
+namespace FernGames
 {
     /// <summary>
-    /// Wrapper class for Unity IAP functionality.
+    /// Wrapper class for Unity IAP v5 functionality.
+    /// Uses the new event-based StoreController API.
     /// </summary>
     public class UnityIAPWrapper : IAPWrapper
-#if MODULE_IAP
-        , IDetailedStoreListener
-#endif
     {
-
 #if MODULE_IAP
-        public static IStoreController Controller { get; private set; }
-        public static IExtensionProvider Extensions { get; private set; }
+        private static StoreController storeController;
+        private static IAPSettings cachedSettings;
+        private static bool isConnected;
+
+        public static StoreController Controller => storeController;
 #endif
 
         /// <summary>
@@ -36,35 +34,49 @@ namespace Watermelon
 #if MODULE_IAP
             try
             {
-                var options = new InitializationOptions().SetEnvironmentName("production");
+                cachedSettings = settings;
 
+                var options = new InitializationOptions().SetEnvironmentName("production");
                 await UnityServices.InitializeAsync(options);
 
-                StandardPurchasingModule purchasingModule = StandardPurchasingModule.Instance();
+                storeController = UnityIAPServices.StoreController();
 
-                if (settings.UseFakeStore)
-                {
-                    purchasingModule.useFakeStoreAlways = true;
-                    purchasingModule.useFakeStoreUIMode = (FakeStoreUIMode)settings.FakeStoreMode;
-                }
+                // Subscribe to events
+                storeController.OnPurchasePending += OnPurchasePending;
+                storeController.OnPurchaseConfirmed += OnPurchaseConfirmed;
+                storeController.OnPurchaseFailed += OnPurchaseFailed;
+                storeController.OnProductsFetched += OnProductsFetched;
+                storeController.OnProductsFetchFailed += OnProductsFetchFailed;
+                storeController.OnPurchasesFetched += OnPurchasesFetched;
+                storeController.OnPurchasesFetchFailed += OnPurchasesFetchFailed;
 
-                // Initialize products
-                ConfigurationBuilder builder = ConfigurationBuilder.Instance(purchasingModule);
+                // Connect to the store
+                await storeController.Connect();
+                isConnected = true;
 
+                if (Monetization.VerboseLogging)
+                    Debug.Log("[IAP Manager]: Connected to store successfully.");
+
+                // Fetch products
+                List<ProductDefinition> productDefinitions = new List<ProductDefinition>();
                 IAPItem[] items = settings.StoreItems;
+
                 foreach (var item in items)
                 {
                     if (!string.IsNullOrEmpty(item.ID))
                     {
-                        builder.AddProduct(item.ID, (UnityEngine.Purchasing.ProductType)item.ProductType);
+                        productDefinitions.Add(new ProductDefinition(item.ID, (UnityEngine.Purchasing.ProductType)item.ProductType));
                     }
                     else
                     {
-                        Debug.LogWarning($"[IAP Manager]: Product {item.ProductType} does not have configured IDs.");
+                        Debug.LogWarning($"[IAP Manager]: Product {item.ProductKeyType} does not have configured IDs.");
                     }
                 }
 
-                UnityPurchasing.Initialize(this, builder);
+                if (productDefinitions.Count > 0)
+                {
+                    storeController.FetchProducts(productDefinitions);
+                }
             }
             catch (System.Exception exception)
             {
@@ -77,87 +89,127 @@ namespace Watermelon
 
 #if MODULE_IAP
         /// <summary>
-        /// Called when Unity IAP is successfully initialized.
+        /// Called when products are successfully fetched from the store.
         /// </summary>
-        /// <param name="controller">The store controller.</param>
-        /// <param name="extensions">The extension provider.</param>
-        public void OnInitialized(IStoreController controller, IExtensionProvider extensions)
+        private void OnProductsFetched(List<Product> products)
         {
-            UnityIAPWrapper.Controller = controller;
-            UnityIAPWrapper.Extensions = extensions;
+            if (Monetization.VerboseLogging)
+                Debug.Log($"[IAP Manager]: Fetched {products.Count} products.");
+
+            // Fetch existing purchases to restore any pending transactions
+            storeController.FetchPurchases();
+        }
+
+        /// <summary>
+        /// Called when product fetching fails.
+        /// </summary>
+        private void OnProductsFetchFailed(ProductFetchFailed failureInfo)
+        {
+            if (Monetization.VerboseLogging)
+                Debug.LogError($"[IAP Manager]: Failed to fetch products: {failureInfo.FailureReason}");
+        }
+
+        /// <summary>
+        /// Called when existing purchases are fetched (used for restoration).
+        /// </summary>
+        private void OnPurchasesFetched(Orders orders)
+        {
+            if (Monetization.VerboseLogging)
+                Debug.Log($"[IAP Manager]: Fetched {orders.ConfirmedOrders.Count} confirmed orders, {orders.PendingOrders.Count} pending orders.");
+
+            // Process any pending orders
+            foreach (var pendingOrder in orders.PendingOrders)
+            {
+                ProcessPendingOrder(pendingOrder);
+            }
 
             IAPManager.OnModuleInitialized();
         }
 
         /// <summary>
-        /// Called when Unity IAP initialization fails.
+        /// Called when fetching purchases fails.
         /// </summary>
-        /// <param name="error">The reason for the failure.</param>
-        public void OnInitializeFailed(InitializationFailureReason error)
+        private void OnPurchasesFetchFailed(PurchasesFetchFailureDescription failureDescription)
         {
             if (Monetization.VerboseLogging)
-                Debug.Log($"[IAPManager]: Module initialization failed with reason: {error}");
+                Debug.LogError($"[IAP Manager]: Failed to fetch purchases: {failureDescription.Message}");
+
+            // Still mark as initialized even if fetch fails
+            IAPManager.OnModuleInitialized();
         }
 
         /// <summary>
-        /// Called when Unity IAP initialization fails with a message.
+        /// Called when a new purchase is pending confirmation.
         /// </summary>
-        /// <param name="error">The reason for the failure.</param>
-        /// <param name="message">The failure message.</param>
-        public void OnInitializeFailed(InitializationFailureReason error, string message)
+        private void OnPurchasePending(PendingOrder pendingOrder)
         {
             if (Monetization.VerboseLogging)
-                Debug.Log($"[IAPManager]: Module initialization failed with reason: {error}, message: {message}");
+                Debug.Log($"[IAP Manager]: Purchase pending for order.");
+
+            ProcessPendingOrder(pendingOrder);
         }
 
         /// <summary>
-        /// Processes a successful purchase.
+        /// Processes a pending order by confirming it and granting rewards.
         /// </summary>
-        /// <param name="e">The purchase event arguments.</param>
-        /// <returns>The result of the purchase processing.</returns>
-        public PurchaseProcessingResult ProcessPurchase(PurchaseEventArgs e)
+        private void ProcessPendingOrder(PendingOrder pendingOrder)
         {
-            if (Monetization.VerboseLogging)
-                Debug.Log($"[IAPManager]: Purchasing - {e.purchasedProduct.definition.id} is completed!");
+            var cartItem = pendingOrder.CartOrdered.Items().FirstOrDefault();
+            if (cartItem != null)
+            {
+                var productId = cartItem.Product.definition.id;
+                IAPItem item = IAPManager.GetIAPItem(productId);
 
-            IAPItem item = IAPManager.GetIAPItem(e.purchasedProduct.definition.id);
-            if (item != null)
-            {
-                IAPManager.OnPurchaseCompleted(item.ProductKeyType);
-            }
-            else
-            {
-                if (Monetization.VerboseLogging)
-                    Debug.Log($"[IAPManager]: Product - {e.purchasedProduct.definition.id} can't be found!");
+                if (item != null)
+                {
+                    IAPManager.OnPurchaseCompleted(item.ProductKeyType);
+                }
+                else
+                {
+                    if (Monetization.VerboseLogging)
+                        Debug.Log($"[IAP Manager]: Product - {productId} can't be found!");
+                }
+
+                // Confirm the purchase to complete the transaction
+                storeController.ConfirmPurchase(pendingOrder);
             }
 
             SystemMessage.ChangeLoadingMessage("Payment complete!");
             SystemMessage.HideLoadingPanel();
+        }
 
-            return PurchaseProcessingResult.Complete;
+        /// <summary>
+        /// Called when a purchase is confirmed (successfully completed).
+        /// </summary>
+        private void OnPurchaseConfirmed(Order confirmedOrder)
+        {
+            if (Monetization.VerboseLogging)
+            {
+                Debug.Log($"[IAP Manager]: Purchase confirmed successfully.");
+            }
         }
 
         /// <summary>
         /// Called when a purchase fails.
         /// </summary>
-        /// <param name="product">The product that failed to purchase.</param>
-        /// <param name="failureReason">The reason for the failure.</param>
-        public void OnPurchaseFailed(UnityEngine.Purchasing.Product product, UnityEngine.Purchasing.PurchaseFailureReason failureReason)
+        private void OnPurchaseFailed(FailedOrder failedOrder)
         {
             if (Monetization.VerboseLogging)
             {
-                Debug.Log($"[IAPManager]: Purchasing - {product.definition.id} failed with reason: {failureReason}");
+                Debug.Log($"[IAP Manager]: Purchase failed with reason: {failedOrder.FailureReason}");
             }
 
-            IAPItem item = IAPManager.GetIAPItem(product.definition.id);
-            if (item != null)
+            // Try to find the product that failed
+            var cartItem = failedOrder.CartOrdered?.Items()?.FirstOrDefault();
+            if (cartItem != null)
             {
-                IAPManager.OnPurchaseFailed(item.ProductKeyType, (Watermelon.PurchaseFailureReason)failureReason);
-            }
-            else
-            {
-                if (Monetization.VerboseLogging)
-                    Debug.Log($"[IAPManager]: Product - {product.definition.id} can't be found!");
+                var productId = cartItem.Product.definition.id;
+                IAPItem item = IAPManager.GetIAPItem(productId);
+
+                if (item != null)
+                {
+                    IAPManager.OnPurchaseFailed(item.ProductKeyType, ConvertFailureReason(failedOrder.FailureReason));
+                }
             }
 
             SystemMessage.ChangeLoadingMessage("Payment failed!");
@@ -165,30 +217,21 @@ namespace Watermelon
         }
 
         /// <summary>
-        /// Called when a purchase fails with a description.
+        /// Converts Unity IAP v5 failure reason to internal failure reason.
         /// </summary>
-        /// <param name="product">The product that failed to purchase.</param>
-        /// <param name="failureDescription">The failure description.</param>
-        public void OnPurchaseFailed(UnityEngine.Purchasing.Product product, PurchaseFailureDescription failureDescription)
+        private FernGames.PurchaseFailureReason ConvertFailureReason(UnityEngine.Purchasing.PurchaseFailureReason reason)
         {
-            if (Monetization.VerboseLogging)
+            return reason switch
             {
-                Debug.Log($"[IAPManager]: Purchasing - {product.definition.id} failed with reason: {failureDescription.message}");
-            }
-
-            IAPItem item = IAPManager.GetIAPItem(product.definition.id);
-            if (item != null)
-            {
-                IAPManager.OnPurchaseFailed(item.ProductKeyType, (Watermelon.PurchaseFailureReason)failureDescription.reason);
-            }
-            else
-            {
-                if (Monetization.VerboseLogging)
-                    Debug.Log($"[IAPManager]: Product - {product.definition.id} can't be found!");
-            }
-
-            SystemMessage.ChangeLoadingMessage("Payment failed!");
-            SystemMessage.HideLoadingPanel();
+                UnityEngine.Purchasing.PurchaseFailureReason.PurchasingUnavailable => FernGames.PurchaseFailureReason.PurchasingUnavailable,
+                UnityEngine.Purchasing.PurchaseFailureReason.ExistingPurchasePending => FernGames.PurchaseFailureReason.ExistingPurchasePending,
+                UnityEngine.Purchasing.PurchaseFailureReason.ProductUnavailable => FernGames.PurchaseFailureReason.ProductUnavailable,
+                UnityEngine.Purchasing.PurchaseFailureReason.SignatureInvalid => FernGames.PurchaseFailureReason.SignatureInvalid,
+                UnityEngine.Purchasing.PurchaseFailureReason.UserCancelled => FernGames.PurchaseFailureReason.UserCancelled,
+                UnityEngine.Purchasing.PurchaseFailureReason.PaymentDeclined => FernGames.PurchaseFailureReason.PaymentDeclined,
+                UnityEngine.Purchasing.PurchaseFailureReason.DuplicateTransaction => FernGames.PurchaseFailureReason.DuplicateTransaction,
+                _ => FernGames.PurchaseFailureReason.Unknown
+            };
         }
 #endif
 
@@ -198,7 +241,7 @@ namespace Watermelon
         public override void RestorePurchases()
         {
 #if MODULE_IAP
-            if (!IAPManager.IsInitialized)
+            if (!IAPManager.IsInitialized || !isConnected)
             {
                 SystemMessage.ShowMessage("Network error. Please try again later");
                 return;
@@ -207,26 +250,20 @@ namespace Watermelon
             SystemMessage.ShowLoadingPanel();
             SystemMessage.ChangeLoadingMessage("Restoring purchased products..");
 
-#if UNITY_ANDROID
-            Extensions.GetExtension<IGooglePlayStoreExtensions>().RestoreTransactions(OnRestored);
-#elif UNITY_IOS
-            Extensions.GetExtension<IAppleExtensions>().RestoreTransactions(OnRestored);
-#endif
-#endif
-        }
-
-        private void OnRestored(bool result, string error)
-        {
-            if (result)
+            storeController.RestoreTransactions((result, error) =>
             {
-                SystemMessage.ChangeLoadingMessage("Restoration completed!");
-            }
-            else
-            {
-                SystemMessage.ChangeLoadingMessage($"Restoration failed with error: {error}!");
-            }
+                if (result)
+                {
+                    SystemMessage.ChangeLoadingMessage("Restoration completed!");
+                }
+                else
+                {
+                    SystemMessage.ChangeLoadingMessage($"Restoration failed: {error}");
+                }
 
-            SystemMessage.HideLoadingPanel();
+                SystemMessage.HideLoadingPanel();
+            });
+#endif
         }
 
         /// <summary>
@@ -236,7 +273,7 @@ namespace Watermelon
         public override void BuyProduct(ProductKeyType productKeyType)
         {
 #if MODULE_IAP
-            if (!IAPManager.IsInitialized)
+            if (!IAPManager.IsInitialized || !isConnected)
             {
                 SystemMessage.ShowMessage("Network error. Please try again later");
                 return;
@@ -248,7 +285,19 @@ namespace Watermelon
             IAPItem item = IAPManager.GetIAPItem(productKeyType);
             if (item != null)
             {
-                Controller.InitiatePurchase(item.ID);
+                var product = storeController.GetProductById(item.ID);
+                if (product != null)
+                {
+                    storeController.PurchaseProduct(product);
+                }
+                else
+                {
+                    if (Monetization.VerboseLogging)
+                        Debug.LogError($"[IAP Manager]: Product {item.ID} not found in store.");
+
+                    SystemMessage.ChangeLoadingMessage("Product not available!");
+                    SystemMessage.HideLoadingPanel();
+                }
             }
 #else
             SystemMessage.ShowMessage("Network error.");
@@ -269,7 +318,11 @@ namespace Watermelon
             IAPItem item = IAPManager.GetIAPItem(productKeyType);
             if (item != null)
             {
-                return new ProductData(Controller.products.WithID(item.ID));
+                var product = storeController.GetProductById(item.ID);
+                if (product != null)
+                {
+                    return new ProductData(product);
+                }
             }
 #endif
 
@@ -287,16 +340,11 @@ namespace Watermelon
             IAPItem item = IAPManager.GetIAPItem(productKeyType);
             if (item != null)
             {
-                Product product = Controller.products.WithID(item.ID);
-                if (product != null)
+                var product = storeController.GetProductById(item.ID);
+                if (product != null && product.definition.type == UnityEngine.Purchasing.ProductType.Subscription)
                 {
-                    if (product.receipt == null)
-                        return false;
-
-                    SubscriptionManager subscriptionManager = new SubscriptionManager(product, null);
-                    SubscriptionInfo info = subscriptionManager.getSubscriptionInfo();
-
-                    return info.isSubscribed() == Result.True;
+                    // Check if the product has a valid receipt (subscription is active)
+                    return product.hasReceipt;
                 }
             }
 #endif

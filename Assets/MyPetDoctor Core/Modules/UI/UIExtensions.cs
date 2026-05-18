@@ -6,7 +6,7 @@ using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-namespace Watermelon
+namespace FernGames
 {
     public static class UIExtensions
     {

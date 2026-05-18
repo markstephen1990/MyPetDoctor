@@ -1,4 +1,4 @@
-namespace Watermelon
+namespace FernGames
 {
     public class AnimalStateMachineController : StateMachineController<AnimalBehaviour, AnimalStateMachineController.State>
     {

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Watermelon
+namespace FernGames
 {
     public class NurseStateMachineController : StateMachineController<NurseBehaviour, NurseStateMachineController.State>
     {

@@ -9,7 +9,7 @@ using System.Text;
 using UnityEditor.Build;
 #endif
 
-namespace Watermelon
+namespace FernGames
 {
     public static class DefineManager
     {

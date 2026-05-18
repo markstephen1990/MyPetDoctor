@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using UnityEngine;
 
-namespace Watermelon
+namespace FernGames
 {
     public class AdDummyHandler : AdProviderHandler
     {

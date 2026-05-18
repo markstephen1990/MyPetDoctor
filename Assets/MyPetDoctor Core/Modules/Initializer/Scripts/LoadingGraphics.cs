@@ -2,7 +2,7 @@
 using TMPro;
 using UnityEngine.UI;
 
-namespace Watermelon
+namespace FernGames
 {
     public class LoadingGraphics : MonoBehaviour
     {

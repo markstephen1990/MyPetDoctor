@@ -4,7 +4,7 @@ using System.Text.RegularExpressions;
 using UnityEditor;
 using UnityEngine;
 
-namespace Watermelon
+namespace FernGames
 {
     [CustomEditor(typeof(IAPSettings))]
     public class IAPSettingsEditor : CustomInspector

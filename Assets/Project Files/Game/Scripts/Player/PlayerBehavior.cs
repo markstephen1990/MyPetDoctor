@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-using Watermelon.LevelSystem;
+using FernGames.LevelSystem;
 
-namespace Watermelon
+namespace FernGames
 {
     public class PlayerBehavior : MonoBehaviour, IAnimalCarrying, IItemCarrying, IDoorOpener
     {

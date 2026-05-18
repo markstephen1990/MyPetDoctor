@@ -7,7 +7,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-namespace Watermelon
+namespace FernGames
 {
     public static class CorePreparationTool
     {

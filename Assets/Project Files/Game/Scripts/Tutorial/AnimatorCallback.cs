@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace Watermelon
+namespace FernGames
 {
     public class AnimatorCallback : MonoBehaviour
     {

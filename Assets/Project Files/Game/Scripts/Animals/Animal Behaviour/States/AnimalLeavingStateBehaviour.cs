@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.AI;
 
-namespace Watermelon
+namespace FernGames
 {
     public class AnimalLeavingStateBehaviour : AnimalStateBehaviour
     {

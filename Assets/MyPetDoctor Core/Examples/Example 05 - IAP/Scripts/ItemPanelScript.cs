@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 using System;
 
-namespace Watermelon
+namespace FernGames
 {
     public class ItemPanelScript : MonoBehaviour
     {

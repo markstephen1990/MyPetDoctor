@@ -1,7 +1,7 @@
 using UnityEngine;
-using Watermelon.Upgrades;
+using FernGames.Upgrades;
 
-namespace Watermelon
+namespace FernGames
 {
     [CreateAssetMenu(fileName = "Character Strength Upgrade", menuName = "Data/Upgrades/Character Strength Upgrade")]
     public class CharacterStrengthUpgrade : Upgrade<CharacterStrengthUpgrade.CharacterStrengthUpgradeStage>

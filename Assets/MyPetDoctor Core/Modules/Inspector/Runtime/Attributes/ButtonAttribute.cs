@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Watermelon
+namespace FernGames
 {
     [AttributeUsage(AttributeTargets.Method, AllowMultiple = true, Inherited = true)]
     public class ButtonAttribute : Attribute

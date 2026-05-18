@@ -3,7 +3,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-namespace Watermelon
+namespace FernGames
 {
     [DefaultExecutionOrder(-999)]
     public class Initializer : MonoBehaviour

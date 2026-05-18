@@ -1,7 +1,7 @@
 ﻿using Unity.AI.Navigation;
 using UnityEngine;
 
-namespace Watermelon.LevelSystem
+namespace FernGames.LevelSystem
 {
     public static class NavMeshController
     {

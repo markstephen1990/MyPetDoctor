@@ -5,7 +5,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
 
-namespace Watermelon
+namespace FernGames
 {
     [StaticUnload]
     [Define("MODULE_ADMOB", "GoogleMobileAds.Api.MobileAds")]

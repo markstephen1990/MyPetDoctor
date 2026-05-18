@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-namespace Watermelon
+namespace FernGames
 {
     public class DoctorUIPanel : MonoBehaviour
     {

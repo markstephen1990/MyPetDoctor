@@ -1,7 +1,7 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace Watermelon
+namespace FernGames
 {
     [CustomEditor(typeof(AbstractSkinDatabase), true)]
     public class AbstractSkinsProviderEditor : CustomInspector

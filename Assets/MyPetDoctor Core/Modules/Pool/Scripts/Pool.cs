@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 
-namespace Watermelon
+namespace FernGames
 {
     /// <summary>
     /// Basic pool class. Contains pool settings and references to pooled objects.

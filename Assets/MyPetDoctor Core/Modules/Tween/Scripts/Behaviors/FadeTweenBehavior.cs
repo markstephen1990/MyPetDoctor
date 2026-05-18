@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Watermelon
+namespace FernGames
 {
     [RequireComponent(typeof(CanvasGroup))]
     public class FadeTweenBehavior : TweenBehavior<CanvasGroup, float>

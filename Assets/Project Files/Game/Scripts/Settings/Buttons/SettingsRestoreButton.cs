@@ -1,6 +1,6 @@
 ﻿using UnityEngine.EventSystems;
 
-namespace Watermelon
+namespace FernGames
 {
     public class SettingsRestoreButton : SettingsButtonBase
     {

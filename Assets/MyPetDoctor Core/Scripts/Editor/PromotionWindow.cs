@@ -6,7 +6,7 @@ using System.Runtime.Serialization.Json;
 using System.Xml.Linq;
 using System.Xml.XPath;
 
-namespace Watermelon
+namespace FernGames
 {
     public class PromotionWindow : EditorWindow
     {

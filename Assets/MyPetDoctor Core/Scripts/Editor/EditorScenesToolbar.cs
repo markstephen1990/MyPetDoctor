@@ -6,7 +6,7 @@ using UnityEditor.Overlays;
 using UnityEditor.Toolbars;
 using System.IO;
 
-namespace Watermelon
+namespace FernGames
 {
     [Overlay(typeof(SceneView), "Scenes Toolbar")]
     [Icon("Assets/Project Files/Watermelon Core/Extended Editor/Icons/icon_settings.png")]

@@ -7,7 +7,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 #endif
 
-namespace Watermelon
+namespace FernGames
 {
     public class KeyboardControl : MonoBehaviour, IControlBehavior
     {

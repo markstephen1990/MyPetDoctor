@@ -1,9 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Watermelon.LevelSystem;
+using FernGames.LevelSystem;
 
-namespace Watermelon
+namespace FernGames
 {
     public class AnimalSpawner : MonoBehaviour
     {

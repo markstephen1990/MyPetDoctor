@@ -1,4 +1,4 @@
-namespace Watermelon
+namespace FernGames
 {
     public interface IOverlayPanel
     {

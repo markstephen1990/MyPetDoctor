@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace Watermelon
+namespace FernGames
 {
     public abstract class IAPWrapper
     {

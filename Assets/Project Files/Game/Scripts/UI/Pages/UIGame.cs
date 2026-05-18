@@ -1,10 +1,10 @@
 ﻿using System;
 using UnityEngine;
 using UnityEngine.UI;
-using Watermelon.IAPStore;
-using Watermelon.SkinStore;
+using FernGames.IAPStore;
+using FernGames.SkinStore;
 
-namespace Watermelon
+namespace FernGames
 {
     public class UIGame : UIPage
     {

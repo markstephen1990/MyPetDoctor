@@ -1,7 +1,7 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace Watermelon
+namespace FernGames
 {
     [CustomPropertyDrawer(typeof(CurrencyAmount))]
     public class CurrencyAmountPropertyDrawer : UnityEditor.PropertyDrawer

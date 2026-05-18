@@ -5,7 +5,7 @@ using System;
 using System.Reflection;
 using System.Linq;
 
-namespace Watermelon
+namespace FernGames
 {
     [CustomEditor(typeof(RewardsHolder), true)]
     public class RewardsHolderEditor : Editor

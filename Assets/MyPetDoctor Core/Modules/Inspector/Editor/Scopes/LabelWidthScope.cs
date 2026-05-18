@@ -1,7 +1,7 @@
 ﻿using UnityEditor;
 using UnityEngine;
 
-namespace Watermelon
+namespace FernGames
 {
     public class LabelWidthScope : GUI.Scope
     {

@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Watermelon
+namespace FernGames
 {
     [PropertyCondition(typeof(HideAttribute))]
     public class HidePropertyDrawCondition : PropertyCondition

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Watermelon
+namespace FernGames
 {
     [DefaultExecutionOrder(-5)]
     public class PoolSceneHolder : MonoBehaviour

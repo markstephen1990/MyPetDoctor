@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Watermelon
+namespace FernGames
 {
     /// <summary>
     /// Interface for caching and applying component properties.

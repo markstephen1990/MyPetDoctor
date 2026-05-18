@@ -8,7 +8,7 @@ using System.Text;
 using UnityEditor.SceneManagement;
 using System.Collections.Generic;
 
-namespace Watermelon
+namespace FernGames
 {
     public abstract class LevelEditorBase : EditorWindow
     {

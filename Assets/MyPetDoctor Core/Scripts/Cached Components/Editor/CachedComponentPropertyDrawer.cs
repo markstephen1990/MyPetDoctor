@@ -5,7 +5,7 @@ using UnityEditor;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-namespace Watermelon
+namespace FernGames
 {
     [CustomPropertyDrawer(typeof(ICachedComponent<>), true)]
     public class CachedComponentPropertyDrawer : PropertyDrawer

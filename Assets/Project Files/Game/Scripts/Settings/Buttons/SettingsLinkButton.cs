@@ -2,7 +2,7 @@
 
 using UnityEngine;
 
-namespace Watermelon
+namespace FernGames
 {
     public class SettingsLinkButton : SettingsButtonBase
     {

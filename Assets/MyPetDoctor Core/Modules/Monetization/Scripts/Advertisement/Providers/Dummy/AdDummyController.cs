@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-namespace Watermelon
+namespace FernGames
 {
     public class AdDummyController : MonoBehaviour
     {

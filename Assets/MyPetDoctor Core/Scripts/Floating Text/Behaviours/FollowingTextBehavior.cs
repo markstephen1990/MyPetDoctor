@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-namespace Watermelon
+namespace FernGames
 {
     public class FollowingTextBehavior : FloatingTextBaseBehavior
     {

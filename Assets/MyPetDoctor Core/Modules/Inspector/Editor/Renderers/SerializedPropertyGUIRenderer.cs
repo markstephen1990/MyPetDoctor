@@ -4,7 +4,7 @@ using UnityEditor;
 using UnityEngine;
 using System.Collections.Generic;
 
-namespace Watermelon
+namespace FernGames
 {
     public class SerializedPropertyGUIRenderer : GUIRenderer
     {

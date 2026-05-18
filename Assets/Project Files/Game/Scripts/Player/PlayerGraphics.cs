@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Watermelon
+namespace FernGames
 {
     public class PlayerGraphics : MonoBehaviour
     {

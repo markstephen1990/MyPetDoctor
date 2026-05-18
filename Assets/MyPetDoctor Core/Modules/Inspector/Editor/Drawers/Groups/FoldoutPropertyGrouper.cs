@@ -1,6 +1,6 @@
 ﻿using UnityEditor;
 
-namespace Watermelon
+namespace FernGames
 {
     [PropertyGrouper(typeof(FoldoutAttribute))]
     public class FoldoutPropertyGrouper : PropertyGrouper

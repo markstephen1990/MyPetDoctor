@@ -7,7 +7,7 @@ using UnityEditor;
 using UnityEngine;
 using Editor = UnityEditor.Editor;
 
-namespace Watermelon
+namespace FernGames
 {
     [CanEditMultipleObjects]
     [CustomEditor(typeof(MonoBehaviour), true)]

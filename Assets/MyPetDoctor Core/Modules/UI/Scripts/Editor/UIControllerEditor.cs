@@ -2,7 +2,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Watermelon
+namespace FernGames
 {
     [CustomEditor(typeof(UIController))]
     public class UIControllerEditor : Editor
