@@ -41,6 +41,8 @@ MonoBehaviour:
   interstitialStartDelay: 40
   interstitialShowingDelay: 30
   autoShowInterstitial: 0
+  loadingAdDuration: 0
+  loadingMessage: Ad is loading..
   isUMPEnabled: 0
   umpTagForUnderAgeOfConsent: 0
   umpDebugMode: 1
@@ -95,24 +97,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f28faf74e3de2b4bb5f8724582e5ceb, type: 3}
   m_Name: IAP Settings
   m_EditorClassIdentifier: 
+  useFakeStore: 0
+  fakeStoreMode: 0
   storeItems:
-  - androidID: com.example.game.noads
-    iOSID: com.example.game.noads
+  - androidID: com.FernGames.MyPetDoctor.noads
+    iOSID: com.FernGames.MyPetDoctor.noads
     productKeyType: 0
     productType: 1
-  - androidID: com.example.game.pack
-    iOSID: com.example.game.pack
+  - androidID: com.FernGames.MyPetDoctor.starterpack
+    iOSID: com.FernGames.MyPetDoctor.starterpack
     productKeyType: 1
     productType: 1
-  - androidID: com.example.game.gold.small
-    iOSID: com.example.game.gold.small
+  - androidID: com.FernGames.MyPetDoctor.goldsmall
+    iOSID: com.FernGames.MyPetDoctor.goldsmall
     productKeyType: 2
     productType: 0
-  - androidID: com.example.game.gold.medium
-    iOSID: com.example.game.gold.medium
+  - androidID: com.FernGames.MyPetDoctor.goldmedium
+    iOSID: com.FernGames.MyPetDoctor.goldmedium
     productKeyType: 3
     productType: 0
-  - androidID: com.example.game.gold.big
-    iOSID: com.example.game.gold.big
+  - androidID: com.FernGames.MyPetDoctor.goldbig
+    iOSID: com.FernGames.MyPetDoctor.goldbig
     productKeyType: 4
     productType: 0

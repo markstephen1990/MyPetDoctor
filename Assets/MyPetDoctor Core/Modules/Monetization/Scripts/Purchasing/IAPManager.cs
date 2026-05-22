@@ -83,7 +83,7 @@ namespace FernGames
         public static Product GetProduct(ProductKeyType productKeyType)
         {
             var iapItem = GetIAPItem(productKeyType);
-            return iapItem != null ? UnityIAPWrapper.Controller.products.WithID(iapItem.ID) : null;
+            return iapItem != null ? UnityIAPWrapper.Controller?.GetProductById(iapItem.ID) : null;
         }
 #endif
 
